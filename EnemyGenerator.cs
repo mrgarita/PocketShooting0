@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour
 {
+    // 敵のプレハブ
     public GameObject enemyPrefab;
 
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class EnemyGenerator : MonoBehaviour
         // 敵をランダムに生成
         if(Random.Range(0, 300) == 1)
         {
-            Vector3 pos = new Vector3(Random.Range(-2.2f, 2.2f), 5.5f, 0);
+            Vector3 pos = new Vector3(Random.Range(-2.2f, 2.2f), 5.5f, 0);  // 画面上方に生成
             Instantiate(enemyPrefab, pos, Quaternion.identity);
         }   
     }

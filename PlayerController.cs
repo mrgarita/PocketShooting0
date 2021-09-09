@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public float Speed;
     // 弾のプレハブ
     public GameObject bulletPrefab;
+    // ゲームオーバー時のプレハブ
+    public GameObject kyaPrefab;
     // プレイヤーの位置
     Vector3  p;
     // プレイヤーの大きさ
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             ps.x = 0;
             ps.y = 0;
+            Destroy(gameObject);
         }
 
         // プレイヤーの大きさを設定
@@ -106,10 +109,14 @@ public class PlayerController : MonoBehaviour
     // 当たり判定
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Enemy")
+        if(mode == MODE.GAME)
         {
-            mode = MODE.GAMEOVER;
+            if (col.gameObject.tag == "Enemy")
+            {
+                mode = MODE.GAMEOVER;
+                // 「きゃっ」プレハブを生成
+                Instantiate(kyaPrefab, transform.position, Quaternion.identity);
+            }
         }
-        
     }
 }

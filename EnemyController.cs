@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
         // 敵の初期位置とプレイヤーの位置によってX軸の移動方向を決定する（プレイヤーに向かってくるような設定）
         vx = 1.0f;
         player = GameObject.Find("Player");
-        if(player.transform.position.x < transform.position.x)
+        if (player && player.transform.position.x < transform.position.x)
         {
             vx = -vx;
         }

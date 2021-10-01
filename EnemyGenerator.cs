@@ -6,6 +6,8 @@ public class EnemyGenerator : MonoBehaviour
 {
     // 敵のプレハブ
     public GameObject enemyPrefab;
+    // 敵2のプレハブ
+    public GameObject enemy2Prefab;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,13 @@ public class EnemyGenerator : MonoBehaviour
         {
             Vector3 pos = new Vector3(Random.Range(-2.2f, 2.2f), 5.5f, 0);  // 画面上方に生成
             Instantiate(enemyPrefab, pos, Quaternion.identity);
-        }   
+        }
+
+        // 敵2をランダムに生成
+        if (Random.Range(0, 500) == 1)
+        {
+            Vector3 pos = new Vector3(Random.Range(-2.2f, 2.2f), 5.5f, 0);  // 画面上方に生成
+            Instantiate(enemy2Prefab, pos, Quaternion.identity);
+        }
     }
 }

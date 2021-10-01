@@ -28,7 +28,8 @@ public class BulletController : MonoBehaviour
 
             // 爆破エフェクト
             Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
-            AudioSource.PlayClipAtPoint(se, transform.position);
+            // 効果音再生
+            AudioSource.PlayClipAtPoint(se, new Vector3(0.0f, 0.0f, -10.0f));
 
             // ぶつかった相手を破壊
             Destroy(col.gameObject);

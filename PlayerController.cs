@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     {
         if(mode == MODE.GAME)
         {
-            if (col.gameObject.tag == "Enemy")
+            if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "Boss")
             {
                 mode = MODE.GAMEOVER;
                 // 「きゃっ」プレハブを生成

@@ -6,7 +6,7 @@ public class BulletController : MonoBehaviour
 {
     // 弾の発射スピード
     public float Speed;
-    // 爆破エフェクト（プレハブ）
+    // 爆破エフェクト
     public GameObject ExplosionEffect;
     // 効果音
     public AudioClip se;
@@ -20,15 +20,32 @@ public class BulletController : MonoBehaviour
     // シーン上のオブジェクトと接触したときの処理
     private void OnTriggerEnter2D(Collider2D col)
     {
+        // ボスだったら
+        if(col.gameObject.tag == "Boss")
+        {
+            // 得点アップ
+            GameObject.Find("Canvas").GetComponent<UIController>().AddScore();
+
+            // ボスのヒットカウント加算
+            GameObject.FindGameObjectWithTag("Boss").GetComponent<BossController>().AddHitCount();
+
+            // 爆破エフェクト
+            Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(se, new Vector3(0f, 0f, -10f)) ;
+
+            // 弾を破壊
+            Destroy(gameObject);
+
+        }
         // 敵だったら
-        if(col.gameObject.tag == "Enemy")
+        if (col.gameObject.tag == "Enemy")
         {
             // 得点アップ
             GameObject.Find("Canvas").GetComponent<UIController>().AddScore();
 
             // 爆破エフェクト
             Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
-            AudioSource.PlayClipAtPoint(se, transform.position);
+            AudioSource.PlayClipAtPoint(se, new Vector3(0f, 0f, -10f));
 
             // ぶつかった相手を破壊
             Destroy(col.gameObject);

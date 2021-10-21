@@ -9,7 +9,7 @@ Unityの2Dシューティングゲーム試作品
 - bossの初期位置を**画面上方枠外**にしておく
 - bossに**Collider2D**追加（Is Triggerにチェック）
 - tagを**Boss**とする
-- bossにスクリプト**BossController.cs**アタッチ
+- bossにスクリプト**[BossController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_motion/BossController.cs)**アタッチ
 
 ## BossControllerスクリプトアタッチ後のInspectorウインドウ設定
 - Boss Explotion Effect: ボスが攻撃されたときの爆発プレハブを設定

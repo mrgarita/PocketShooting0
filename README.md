@@ -2,6 +2,7 @@
 Unityの2Dシューティングゲーム試作品
 ## ボスの動きを作る
 - シーンにボスのスプライト配置(boss)
+![boss](https://user-images.githubusercontent.com/32384416/138200097-7497d9c3-970e-45d5-a286-0b0b2848a470.png)
 - bossの初期位置を**画面上方枠外**にしておく
 - bossに**Collider2D**追加（Is Triggerにチェック）
 - tagを**Boss**とする

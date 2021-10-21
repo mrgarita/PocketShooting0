@@ -18,6 +18,10 @@ public class KyaController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
- 
+		// 下に見えなくなったら消去
+		if(transform.position.y < -5.5f)
+        {
+			Destroy(gameObject);
+        }
 	}
 }

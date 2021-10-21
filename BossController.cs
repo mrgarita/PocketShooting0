@@ -14,7 +14,7 @@ public class BossController : MonoBehaviour
     // ボスの体力
     public int BossHp;
 
-    // ボスの弾幕攻撃用プレハブ（未使用）
+    // ボスの弾幕攻撃用プレハブ
     public GameObject bossBulletNormal;
     // ボスの強化攻撃用プレハブ（未使用）
     public GameObject bossBulletSpecial;
@@ -23,6 +23,21 @@ public class BossController : MonoBehaviour
     int HitCount;
     // ボスの位置
     Vector3 pos;
+
+    // 弾幕発射角度設定
+    float[] angles = { -60, -90, -120 };
+
+    // 弾幕発射関数
+    void CreateShot()
+    {
+        foreach (float angle in angles)
+        {
+            // 弾プレハブを生成
+            GameObject shot = Instantiate(bossBulletNormal, transform.position, Quaternion.identity);
+            BossBulletController s = shot.GetComponent<BossBulletController>();     // オブジェクトにアタッチしたBossBulletControllerスクリプトを取得
+            s.Create(angle);    // 角度を設定
+        }
+    }
 
     // ボスのヒットカウント加算
     public void AddHitCount()
@@ -36,6 +51,7 @@ public class BossController : MonoBehaviour
     {
         GetComponent<Collider2D>().enabled = false; // 登場した時は当たり判定無効化
         HitCount = 0;
+        StartCoroutine(BossShot());     // ボス登場時の並列実行処理を設定
     }
 
     // Update is called once per frame
@@ -82,6 +98,16 @@ public class BossController : MonoBehaviour
             // ボスを消去
             Destroy(gameObject);
         }
-
     }
+
+    // 並列実行処理：一定時間ごとにボスが弾幕を出す
+    IEnumerator BossShot()
+    {
+        while (true)
+        {
+            CreateShot();
+            yield return new WaitForSeconds(3f);    // 3秒ごと
+        }
+    }
+
 }

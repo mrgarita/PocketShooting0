@@ -14,7 +14,7 @@ Unityの2Dシューティングゲーム試作品
 
 ### BossControllerスクリプトに弾幕発射部分を加える
 - [BossController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_bullet1/BossController.cs)に修正
-- 修正後、シーン上のボスを選択しInspectorウインドウのBoss Bullet Normalに作ったBossBulletを設定
+- 修正後、シーン上のボスを選択しInspectorウインドウのBoss Bullet Normalにプレハブ**BossBullet**を設定
 
 ### ボスの弾幕攻撃修正に伴い以下スクリプトを修正
 - [PlayerController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_bullet1/PlayerController.cs)　**ボスの弾幕との当たり判定部分**

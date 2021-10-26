@@ -7,8 +7,9 @@ Unityの2Dシューティングゲーム試作品
 
 ## ボスの動きを作る
 - bossの初期位置を**画面上方枠外**にしておく
-- bossに**Collider2D**追加（Is Triggerにチェック）
-- tagを**Boss**とする
+- bossに**Collider2D**追加（Is Triggerにチェック）当たり判定用
+- bossに**Rigidbody2D**追加（BodyT TypeはKinematicでOK）当たり判定用
+- tagを**Boss**とする　当たり判定用
 - bossにスクリプト[BossController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_motion/BossController.cs)アタッチ
 
 ## BossControllerスクリプトアタッチ後のInspectorウインドウ設定
@@ -20,6 +21,6 @@ Unityの2Dシューティングゲーム試作品
 - Boss Bullet Special: 未使用
 
 ## ボスの作成に伴い以下のファイルを修正
-- **BulletController.cs**（ボスとの当たり判定部分）
+- [BulletController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_motion/BulletController.cs)（ボスとの当たり判定部分）
 
 **※とりあえずこの段階ではボスの攻撃部分が完成していないので、シーンに作成したbossのプレハブ化はしない**

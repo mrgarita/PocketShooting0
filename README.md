@@ -9,6 +9,7 @@ Unityの2Dシューティングゲーム試作品
 - 弾幕用画像をシーンに配置
 - 配置した画像に[BossBulletController.cs](https://github.com/mrgarita/PocketShooting0/blob/boss_bullet1/BossBulletController.cs)をアタッチ
 - アタッチ後、Inspectorウインドウの**Speed項目**に弾の速度を適当に設定（実数）
+- 当たり判定用に**Circle Collider 2D**コンポーネントを追加
 - プレハブ化して**BossBullet**に名前変更
 
 ### BossControllerスクリプトに弾幕発射部分を加える

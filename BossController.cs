@@ -16,8 +16,10 @@ public class BossController : MonoBehaviour
 
     // ボスの弾幕攻撃用プレハブ
     public GameObject bossBulletNormal;
-    // ボスの強化攻撃用プレハブ（未使用）
+    // ボスの強化攻撃用プレハブ
     public GameObject bossBulletSpecial;
+    // ボスの強化攻撃のON/OFF
+    bool bossBulletSpecialFlg;
 
     // ボスのヒットカウント
     int HitCount;
@@ -52,6 +54,7 @@ public class BossController : MonoBehaviour
         GetComponent<Collider2D>().enabled = false; // 登場した時は当たり判定無効化
         HitCount = 0;
         StartCoroutine(BossShot());     // ボス登場時の並列実行処理を設定
+        bossBulletSpecialFlg = false;   // ボスの強化攻撃OFF
     }
 
     // Update is called once per frame
@@ -68,7 +71,12 @@ public class BossController : MonoBehaviour
         else                    // 途中からは左右に行ったり来たり
         {
             GetComponent<Collider2D>().enabled = true; // 当たり判定有効化
-           
+            // ボスの強化攻撃ON
+            if (bossBulletSpecialFlg == false)
+            {
+                bossBulletSpecialFlg = true;        
+                StartCoroutine(BossSpecialShot());
+            }
             // 移動方向
             Vector3 vec = new Vector3(Speed, 0f, 0f);
             // 現在位置に加算
@@ -107,6 +115,16 @@ public class BossController : MonoBehaviour
         {
             CreateShot();
             yield return new WaitForSeconds(3f);    // 3秒ごと
+        }
+    }
+
+    // 並列実行処理：一定時間ごとにボスが強化攻撃を出す
+    IEnumerator BossSpecialShot()
+    {
+        while (true)
+        {
+            Instantiate(bossBulletSpecial, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(5f);    // 5秒ごと
         }
     }
 

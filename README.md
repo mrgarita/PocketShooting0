@@ -11,6 +11,7 @@ Unityの2Dシューティングゲーム試作品
 - **Collider 2D**コンポーネントを追加（Is Triggerにチェック）
 - [BossSpecialBulletController](https://github.com/mrgarita/PocketShooting0/blob/boss_bullet2/BossSpecialBulletController.cs)スクリプトを作成しアタッチ
 - アタッチ後、Inspectorウインドウの**Speed**（発射速度,10くらいが適当）と**Se**（発射時の効果音）を設定
+- Tagを**EnemyBullet**とする（ボスの弾幕と同じ）
 - プレハブ化する（プレハブ名：**BossSpecialBullet**）
 
 ## ボスにアタッチ済みのスクリプト修正

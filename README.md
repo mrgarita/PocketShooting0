@@ -37,7 +37,7 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 - Color（お好みの色を設定）
 		
 ### タイトル画面用のスクリプト
-- スクリプト[TitleController]()を作成し、**Canvas**にアタッチ
+- スクリプト[TitleController](https://github.com/mrgarita/PocketShooting0/blob/title_to_game/TitleController.cs)を作成し、**Canvas**にアタッチ
 
 ### タイトルシーンをプロジェクトに追加
 - **File > Build Settings...** を開き、*Scene In Build*項目に**TitleScene**、**GameScene**の順に追加しておく
@@ -47,4 +47,5 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 - ゲームパッドの**Bボタン**または**Enterキー**でゲーム画面に遷移すればOK
 
 ## ここまでのイメージ
-
+- ゲームパッドの**Bボタン**又は**Enterキー**を押すとゲーム画面に遷移します
+![pocketshooting_title2game](https://user-images.githubusercontent.com/32384416/141222036-01ec9fd2-a5bb-477e-82e3-52af43ed114b.gif)

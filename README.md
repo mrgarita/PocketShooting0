@@ -54,6 +54,8 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 ![pocketshooting_title2game](https://user-images.githubusercontent.com/32384416/141222036-01ec9fd2-a5bb-477e-82e3-52af43ed114b.gif)
 
 ## 少しタイトルが寂しいのでタイトル画面に動く雲を作る
+
+### 動く雲のプレハブ作成
 - 雲のスプライト画像（イメージ）
 
 ![kumo](https://user-images.githubusercontent.com/32384416/141225721-e87d0946-9109-4373-8fa9-f0176e60865a.png)
@@ -62,6 +64,7 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 - [KumoController](https://github.com/mrgarita/PocketShooting0/blob/title_to_game/KumoController.cs)スクリプトを新規作成しシーンに配置した雲スプライトにアタッチ
 - スクリプトアタッチ後、雲スプライトを**プレハブ化**して名前を**Kumo**に変更
 
+### プレハブKumoの配置
 - プレハブKumoをシーン右端の枠外に適当に3つほど配置してタイトル画面の作成完了
 
 <img width="432" alt="scene_kumo" src="https://user-images.githubusercontent.com/32384416/141245811-fb5be0f7-82b1-412b-8faf-cce635c05e68.PNG">

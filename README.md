@@ -1,6 +1,7 @@
 # PocketShooting0
 - Unityの2Dシューティングゲーム試作品
 - **タイトル画面からゲーム画面への遷移**
+- 全体の実行イメージはYouTubeでも見る事ができます。（⇒[こちら](https://youtu.be/JnoGwwYkAN4)）
 
 ## タイトル画面の作成
 - イメージ

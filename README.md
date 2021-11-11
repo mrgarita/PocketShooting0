@@ -1,11 +1,13 @@
 # PocketShooting0
 - Unityの2Dシューティングゲーム試作品
 - **ゲーム画面からタイトル画面への遷移**
+- まあ、これで一応*ゲームっぽく*なったのではないでしょうか？
 
 ## 完成イメージ
+- タイトル画面からはゲームパッドの**Bボタン**又は**Enterキー**でゲーム画面に遷移します
+
 ![pocketshooting_game2title](https://user-images.githubusercontent.com/32384416/141254498-03fdeb2f-5809-47a2-9e97-8d52201a51e3.gif)
 
-- タイトル画面からはゲームパッドの**Bボタン**又は**Enterキー**でゲーム画面に遷移します
 
 ## ゲームオーバー/ゲームクリアでタイトル画面に戻るため2つのスクリプトを修正する
 - [GameController](https://github.com/mrgarita/PocketShooting0/blob/game_to_title/GameController.cs)スクリプトの修正

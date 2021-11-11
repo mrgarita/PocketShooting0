@@ -17,6 +17,7 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 - *UI Scale Mode*を**Scale With Screen Size**にする
 - *Reference Resolution*の**X**を**720**, **Y**を**1280**とする
 - *Screen Match Mode*を**Expand**に設定
+<img width="296" alt="canvas_scaler" src="https://user-images.githubusercontent.com/32384416/141222525-b7c3a939-7098-4fcc-a347-f7bb1a1cbc86.PNG">
 
 ### 追加したCanvasのTextに以下の設定をする
 画面の中央にタイトル文字が表示されるように設定
@@ -41,11 +42,9 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 
 ### タイトルシーンをプロジェクトに追加
 - **File > Build Settings...** を開き、*Scene In Build*項目に**TitleScene**、**GameScene**の順に追加しておく
+<img width="475" alt="build_settings" src="https://user-images.githubusercontent.com/32384416/141222561-ac99e57d-10c9-4ffd-8964-2b692c1812d6.PNG">
 
-ここまでの状態を実行確認
-- TitleSceneを開いた状態で、実行
+## ここまでの状態を実行確認
+- TitleSceneを開いた状態で、プロジェクトを実行
 - ゲームパッドの**Bボタン**または**Enterキー**でゲーム画面に遷移すればOK
-
-## ここまでのイメージ
-- ゲームパッドの**Bボタン**又は**Enterキー**を押すとゲーム画面に遷移します
 ![pocketshooting_title2game](https://user-images.githubusercontent.com/32384416/141222036-01ec9fd2-a5bb-477e-82e3-52af43ed114b.gif)

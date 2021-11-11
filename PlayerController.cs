@@ -71,6 +71,8 @@ public class PlayerController : MonoBehaviour
     {
       ps.x = 0;
       ps.y = 0;
+      // プレイヤーが消えたらタイトルに戻る
+      GameObject.Find("GameMain").GetComponent<GameController>().status = STATUS.TITLE;
       Destroy(gameObject);
     }
 

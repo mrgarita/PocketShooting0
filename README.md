@@ -3,7 +3,7 @@
 - **タイトル画面からゲーム画面への遷移**
 
 ## タイトル画面の作成
-イメージ
+- イメージ
 <img width="229" alt="pocketshooting_title" src="https://user-images.githubusercontent.com/32384416/141222759-c7a854e2-e49d-474d-83fd-9ce9f7ba17fe.PNG">
 
 ### シーンファイル作成

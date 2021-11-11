@@ -8,15 +8,15 @@
 - タイトル画面からはゲームパッドの**Bボタン**又は**Enterキー**でゲーム画面に遷移します
 
 ## ゲームオーバー/ゲームクリアでタイトル画面に戻るため2つのスクリプトを修正する
-- [GameController]()スクリプトの修正
+- [GameController](https://github.com/mrgarita/PocketShooting0/blob/game_to_title/GameController.cs)スクリプトの修正
 
--- 修正内容
---- using UnityEngine.SceneManagement;追加
---- ゲームの状態にTITLEを追加
---- ゲーム終了メソッド（ExitGame）追加
---- Updateメソッドに遷移処理を追加
+  - 修正内容
+    - using UnityEngine.SceneManagement;追加
+    - ゲームの状態にTITLEを追加
+    - ゲーム終了メソッド（ExitGame）追加
+    - Updateメソッドに遷移処理を追加
 
-- [PlayerController]()スクリプトの修正
+- [PlayerController](https://github.com/mrgarita/PocketShooting0/blob/game_to_title/PlayerController.cs)スクリプトの修正
 
--- 修正内容
---- GameOverメソッド内に1行追加
+  - 修正内容
+    - GameOverメソッド内に1行追加

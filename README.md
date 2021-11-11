@@ -62,5 +62,7 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 - スクリプトアタッチ後、雲スプライトをプレハブ化して名前をKumoに変更
 - プレハブKumoをシーン右端の枠外に適当に3つほど配置
 
+<img width="432" alt="scene_kumo" src="https://user-images.githubusercontent.com/32384416/141245811-fb5be0f7-82b1-412b-8faf-cce635c05e68.PNG">
+
 ### 動く雲を配置した際のタイトル画面実行イメージ
 ![pocketshooting_title_image](https://user-images.githubusercontent.com/32384416/141226687-f63b9c15-87b6-4d8b-bea9-fb8b91e3684a.gif)

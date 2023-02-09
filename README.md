@@ -3,8 +3,8 @@ Unity2Dでシューティングゲームを制作する
 
 ## プレイヤーのゲームオーバー時のエフェクトを追加する(4/12)
 
-### エフェクト用画像
-白い文字の透過画像なので見えませんがこの下に画像があります
+### エフェクト用画像（白い文字の透過画像なので見えませんがこの下に画像があります）
+
 ![kya](https://user-images.githubusercontent.com/32384416/217694815-942f15a1-4726-423c-9781-b0df0d2157fb.png)
 
 ### ゲームオーバー時のエフェクト作成
@@ -16,7 +16,7 @@ Unity2Dでシューティングゲームを制作する
 
 ### スクリプト修正
 - KyaControllerの追加により[PlayerController](https://github.com/mrgarita/PocketShooting0/blob/player_kya_effect/PlayerController.cs)の一部修正
-- シーン上のPlayerのInspectorにあるKya PrefabにプレハブKyaを設定
+- シーン上のPlayerのInspectorにある**Kya Prefab**にプレハブ**Kya**を設定
 - [EnemyController](https://github.com/mrgarita/PocketShooting0/blob/player_kya_effect/EnemyController.cs)の一部修正
 
 [次のステップ(5/12)＞＞ 敵2の追加](https://github.com/mrgarita/PocketShooting0/tree/enemy2_add)

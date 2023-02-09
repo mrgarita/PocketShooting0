@@ -1,10 +1,7 @@
 # PocketShooting0
-- Unityの2Dシューティングゲーム試作品
-- **タイトル画面からゲーム画面への遷移**
-- 全体の実行イメージはYouTubeでも見る事ができます。（⇒[こちら](https://youtu.be/JnoGwwYkAN4)）
+Unity2Dでシューティングゲームを制作する
 
-## タイトル画面の作成
-- イメージ
+## タイトル画面を作る(11/12)
 <img width="229" alt="pocketshooting_title" src="https://user-images.githubusercontent.com/32384416/141222759-c7a854e2-e49d-474d-83fd-9ce9f7ba17fe.PNG">
 
 ### シーンファイル作成
@@ -14,17 +11,16 @@
 ### タイトル画面の背景色
 Main Cameraの設定変更
 - Cameraコンポーネントの*Clear Flags*を**Solid Color**に変更
-- **Background**で背景色を設定
+- **Background**で背景色を適当に設定
 
-### タイトル文字
+### タイトル文字を作る
 UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように設定
 - *UI Scale Mode*を**Scale With Screen Size**にする
 - *Reference Resolution*の**X**を**720**, **Y**を**1280**とする
 - *Screen Match Mode*を**Expand**に設定
 <img width="296" alt="canvas_scaler" src="https://user-images.githubusercontent.com/32384416/141222525-b7c3a939-7098-4fcc-a347-f7bb1a1cbc86.PNG">
 
-### 追加したCanvasのTextに以下の設定をする
-画面の中央にタイトル文字が表示されるように設定
+TextのInspector設定
 
 #### Rect Transform
 - *center*　*middle*で中央に配置
@@ -35,13 +31,13 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 
 #### Character
 - *Font*は**ThaleahFat**（なんでも良い）
-- *Font Size*は**80**
+- *Font Size*は**80**前後
 
 #### Paragrash
 - *Alignment*	上下左右とも中央
 - Color（お好みの色を設定）
 		
-### タイトル画面用のスクリプト
+### タイトル画面用のスクリプト作成
 - スクリプト[TitleController](https://github.com/mrgarita/PocketShooting0/blob/title_to_game/TitleController.cs)を作成し、**Canvas**にアタッチ
 
 ### タイトルシーンをプロジェクトに追加
@@ -69,5 +65,7 @@ UI ＞　Text　追加し、Canvasの*Canvas Scaler*項目を以下のように�
 
 <img width="432" alt="scene_kumo" src="https://user-images.githubusercontent.com/32384416/141245811-fb5be0f7-82b1-412b-8faf-cce635c05e68.PNG">
 
-### 動く雲を配置した際のタイトル画面実行イメージ
+### ここまでのタイトル画面実行イメージ
 ![pocketshooting_title_image](https://user-images.githubusercontent.com/32384416/141226687-f63b9c15-87b6-4d8b-bea9-fb8b91e3684a.gif)
+
+[次のステップ(12/12)＞＞ ゲーム画面からタイトル画面に戻る](https://github.com/mrgarita/PocketShooting0/tree/game_to_title)

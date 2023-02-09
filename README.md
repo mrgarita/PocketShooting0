@@ -68,4 +68,4 @@ TextのInspector設定
 ### ここまでのタイトル画面実行イメージ
 ![pocketshooting_title_image](https://user-images.githubusercontent.com/32384416/141226687-f63b9c15-87b6-4d8b-bea9-fb8b91e3684a.gif)
 
-[次のステップ(12/12)＞＞ ゲーム画面からタイトル画面に戻る](https://github.com/mrgarita/PocketShooting0/tree/game_to_title)
+[次のステップ(12/12)＞＞ ゲーム画面からタイトル画面に戻る（完成）](https://github.com/mrgarita/PocketShooting0/tree/game_to_title)

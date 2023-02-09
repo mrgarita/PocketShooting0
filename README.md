@@ -1,6 +1,5 @@
 # PocketShooting0
-Unityの2Dシューティングゲーム試作品
-![pocket_shooting_eyecatch](https://user-images.githubusercontent.com/32384416/217681831-93edc166-744d-46c2-9576-bdd1ee6f297e.jpg)
+- Unity2Dでの**シューティングゲーム制作**を順を追って解説します
 
 ## 参照サイト
 - まずは以下のサイトを参考にシューティングゲームの骨格を作成してください

@@ -1,4 +1,4 @@
-# PocketShooting0
+# PocketShooting0(1/12)
 - Unity2Dでの**シューティングゲーム制作**を順を追って解説します
 
 ## 参照サイト
@@ -7,3 +7,5 @@
 
 ## ここまでの完成イメージ
 ![pocketshooting](https://user-images.githubusercontent.com/32384416/217684655-ba9ec2ae-db92-4434-aaee-4a3e88110592.gif)
+
+[次のステップ(2/12)＞＞ プレイヤーの移動範囲を制限する](https://github.com/mrgarita/PocketShooting0/tree/player_move_range)

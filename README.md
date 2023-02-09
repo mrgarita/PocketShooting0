@@ -1,22 +1,23 @@
 # PocketShooting0
-- Unityの2Dシューティングゲーム試作品
-- **ゲームクリアとゲームオーバーのメッセージを表示する**
+Unity2Dでシューティングゲームを制作する
 
-## 寂しいのでゲーム中のBGMを追加
-- シーン上の**GameMain**に**Audio Source**コンポーネントを追加
-- Inspectorから**Audio Clip**に好きなBGM用音源を設定（Play On AwakeとLoopにチェック）
+## ゲームオーバー・クリアのメッセージ表示(10/12)
 
-## プレイヤーがやられたときゲームオーバーとする
+### プレイヤーがやられたときゲームオーバーとする
 - スクリプト[PlayerController](https://github.com/mrgarita/PocketShooting0/blob/game_message/PlayerController.cs)を修正（GameMainに設定したGameControllerスクリプトとゲームの状態変数がかぶるため消去しGameControllerを参照するように変更、その他プレイヤーがやられたときの効果音再生を追加）
 - スクリプト修正後、Inspectorから**Game Over Se**にやられた時の効果音を設定
 
-## ボスを倒したときゲームクリアとする
+### ボスを倒したときゲームクリアとする
 - スクリプト[BossController](https://github.com/mrgarita/PocketShooting0/blob/game_message/BossController.cs)を修正
 
-## メッセージ表示部分を追加
+### メッセージ表示部分を追加
 - シーンに**UI　＞　Text** を追加し名前を**Message**とする（シーン中央に設定）
 - スクリプト[UIController](https://github.com/mrgarita/PocketShooting0/blob/game_message/UIController.cs)を修正（Messageにゲームクリア・ゲームオーバーの表示をする）
 - UIController修正後、シーン上の**Canvas**をクリック、Inspectorウインドウの**UI Controller**部分の**Score**と**Message**にそれぞれシーン上の*Score*と*Messsage*を設定する
+
+### 寂しいのでゲーム中のBGMを追加
+- シーン上の**GameMain**に**Audio Source**コンポーネントを追加
+- Inspectorから**Audio Clip**に好きなBGM用音源を設定（Play On AwakeとLoopにチェック）
 
 ## ここまでのイメージ
 ### プレイヤーがやられたとき（ゲームオーバー）
@@ -24,3 +25,5 @@
 
 ### ボスを倒したとき（ゲームクリア）
 ![pocketshooting_gameclear](https://user-images.githubusercontent.com/32384416/140453924-2829405b-b78b-446c-85de-666744b41428.gif)
+
+[次のステップ(11/12)＞＞ タイトル画面を作る](https://github.com/mrgarita/PocketShooting0/tree/title_to_game)

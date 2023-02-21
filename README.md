@@ -8,6 +8,7 @@ Unity2Dでシューティングゲームを制作する
 ![kya](https://user-images.githubusercontent.com/32384416/217694815-942f15a1-4726-423c-9781-b0df0d2157fb.png)
 
 ### ゲームオーバー時のエフェクト作成
+- シーン上のplayerの名称を**Player**に変更（今後、Playerの名前を使って外部スクリプトからプレイヤーを呼び出します）
 - エフェクト用画像をシーンに配置
 - Rigidbody2Dコンポーネント追加
 - Rigidbody2DのBodyTypeは、Dynamicで使用
